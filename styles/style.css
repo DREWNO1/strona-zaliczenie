@@ -392,4 +392,10 @@ footer > p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.oof {
+  background-color: #272727;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }/*# sourceMappingURL=style.css.map */
