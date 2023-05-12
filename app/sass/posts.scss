@@ -102,3 +102,18 @@
 .post-text {
     font-family: 'Tilt Warp', cursive;
 }
+
+.subtitle {
+    margin: 2rem 0;
+}
+
+.xkom-link {
+    color: #494949;
+    text-decoration: underline 1px #494949 dotted;
+    transition: .3s;
+
+}
+
+.xkom-link:hover {
+    transform: scale(1.1);
+}
