@@ -12,6 +12,7 @@ main {
     align-items: center;
     min-height: 80vh;
     margin-bottom: 5rem;
+    transition: 1s;
 }
 
 .div1 {
@@ -105,7 +106,7 @@ main {
     display: block;
     top: 50%;
     background-color: #000000cb;
-    padding: 0.5rem;
+    padding: 1rem;
     color: #fff;
     border-radius: .5rem;
     transition: .3s;
@@ -125,5 +126,11 @@ main {
 }
 
 .button-right {
+    right: 5%;
+}
+
+.button-close {
+    background-color: #ff3b3bcb;
+    top: 5%;
     right: 5%;
 }

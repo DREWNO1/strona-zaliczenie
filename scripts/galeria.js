@@ -8,12 +8,14 @@ const zdjecie = document.querySelector(".zdjecie");
 const picBtns = document.querySelectorAll(".picture-button")
 const leftBtn = document.querySelector(".button-left")
 const rightBtn = document.querySelector(".button-right")
+const closeBtn = document.querySelector(".button-close")
 
 const postsList = {
     post1: new Set(['post1.png', 'avatar.png']),
     post2: new Set(['post2.png', 'avatar2.png', 'ja.JPEG', 'avatar3.png', 'post3.png']),
     post3: new Set(['post3.png', 'avatar3.png'])
 };
+
 let i = 0;
 // post1.set(['post1.png', 'avatar'])
 
@@ -83,6 +85,25 @@ posts.forEach((post) => {
 
         })
 
+        closeBtn.addEventListener('click', () => {
+            zdjecie.style.opacity = "0";
+
+            setTimeout(() => {
+                zdjecie.removeChild(postImage)
+                mainPage.style.display = "grid";
+                galPage.style.display = "none";
+
+                setTimeout(() => {
+                    mainPage.style.opacity = "1";
+                }, 500)
+            }, 1000)
+
+
+
+
+        })
+
+
         setTimeout(() => {
             zdjecie.style.opacity = "1";
         }, 1000)
@@ -98,3 +119,4 @@ picBtns.forEach((picBtn) => {
         picBtn.style.transform = "scale(1)"
     })
 })
+

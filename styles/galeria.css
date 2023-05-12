@@ -12,6 +12,7 @@ main {
   align-items: center;
   min-height: 80vh;
   margin-bottom: 5rem;
+  transition: 1s;
 }
 
 .div1 {
@@ -105,7 +106,7 @@ main {
   display: block;
   top: 50%;
   background-color: rgba(0, 0, 0, 0.7960784314);
-  padding: 0.5rem;
+  padding: 1rem;
   color: #fff;
   border-radius: 0.5rem;
   transition: 0.3s;
@@ -125,6 +126,12 @@ main {
 }
 
 .button-right {
+  right: 5%;
+}
+
+.button-close {
+  background-color: rgba(255, 59, 59, 0.7960784314);
+  top: 5%;
   right: 5%;
 }
 
