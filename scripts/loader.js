@@ -10,6 +10,6 @@ onload = () => {
         setTimeout(() => {
             loader.style.display = "none";
             page.style.filter = "blur(0)"
-        }, 500)
+        }, 100)
     }, 1000)
 }

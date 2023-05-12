@@ -23,8 +23,7 @@
 .post-text {
   text-justify: auto;
   text-align: justify;
-  -moz-text-align-last: center;
-       text-align-last: center;
+  text-align-last: center;
   color: #494949;
   margin: 3rem 4rem;
 }
@@ -99,4 +98,6 @@
 
 .post-text {
   font-family: "Tilt Warp", cursive;
-}/*# sourceMappingURL=posts.css.map */
+}
+
+/*# sourceMappingURL=posts.css.map */

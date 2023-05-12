@@ -52,10 +52,16 @@ main {
 
 .gal {
   text-align: center;
-  box-shadow: 0 0 1rem 0.5rem #a3a3a3;
   margin-bottom: 1rem;
+  box-shadow: 0 0 1rem 0.5rem #a3a3a3;
+  background-color: #fff;
   border: 1px solid #aaaaaa;
   transition: 0.3s;
+}
+
+.gal > p {
+  background-color: #fff;
+  border: none;
 }
 
 .gal > img {
@@ -64,10 +70,15 @@ main {
 }
 
 .gal:hover {
+  cursor: pointer;
   scale: 1.05;
   box-shadow: 0 0 1rem 0.5rem #d6d6d6;
   z-index: auto;
   border-right: 1px solid #aaaaaa;
+}
+
+.gal:hover > p {
+  box-shadow: none;
 }
 
 #gallery-page {
@@ -98,13 +109,15 @@ main {
   color: #fff;
   border-radius: 0.5rem;
   transition: 0.3s;
+  transition-timing-function: cubic-bezier(0.75, -3, 0.25, 4);
   cursor: pointer;
 }
 
 .post-picture {
   aspect-ratio: 1/1;
   width: 500px;
-  transition: 1s;
+  transition: 0.5s;
+  opacity: 1;
 }
 
 .button-left {
@@ -113,4 +126,6 @@ main {
 
 .button-right {
   right: 5%;
-}/*# sourceMappingURL=galeria.css.map */
+}
+
+/*# sourceMappingURL=galeria.css.map */

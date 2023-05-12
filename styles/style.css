@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Tilt Warp", cursive;
+  transition-timing-function: cubic-bezier(0.75, -3, 0.25, 4);
 }
 
 a {
@@ -43,6 +44,7 @@ header > ul > li {
   display: block;
   float: left;
   transition: 0.3s;
+  transition-timing-function: cubic-bezier(0.75, -1, 0.25, 2);
 }
 
 header > ul > li:hover {
@@ -211,7 +213,9 @@ footer > p {
   transition: 1s;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   display: block;
   width: 50px;
   height: 10px;
@@ -319,4 +323,6 @@ footer > p {
   background-color: #272727;
   padding: 0.5rem;
   border-radius: 1rem;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
