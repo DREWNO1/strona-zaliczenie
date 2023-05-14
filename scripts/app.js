@@ -4,7 +4,8 @@ const menuBtn = document.querySelector(".menu-button");
 const btnBack = document.querySelector(".btn-back");
 const main = document.querySelector("main");
 const page = document.querySelector(".page");
-
+const ttvscript = document.querySelector(".twitch-script");
+const [red, green, blue] = [255, 255, 255];
 
 // menuBtn.addEventListener('click', () => {
 //     if(menuBtn.classList.contains("hover")) {
@@ -13,7 +14,7 @@ const page = document.querySelector(".page");
 
 //     menuBtn.classList.toggle("change");
 //     menuPage.classList.toggle("hidden");
-    
+
 //     main.classList.toggle("blur");
 
 //     setTimeout(() => {
@@ -21,12 +22,11 @@ const page = document.querySelector(".page");
 //     }, 150);
 // })
 
-// window.addEventListener("scroll", () => {
-   
-//     if(window.scrollY >= 200) {
-//         menuBtn.classList.remove("menu-btn-hidden");
-//         console.log("scroll")
-//     } else {
-//         menuBtn.classList.add("menu-btn-hidden");
-//     }
-// });
+window.addEventListener("scroll", () => {
+    let y = 1 + (window.scrollY || window.pageYOffset) / 300
+    const [r, g, b] = [red / y, green / y, blue / y].map(Math.round)
+
+    console.log(`rgb(${r}, ${g}, ${b}`)
+
+    main.style.background = `rgb(${r}, ${g}, ${b}`
+});

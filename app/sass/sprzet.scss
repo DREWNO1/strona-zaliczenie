@@ -1,0 +1,54 @@
+.post {
+    border: 0;
+}
+
+
+.post-text {
+    margin: 0;
+}
+
+.komputer {
+    color: #fff;
+    padding: 1rem 2rem;
+    background-color: #000;
+}
+
+.txt>p {
+    margin-bottom: .5rem;
+}
+
+.xkom-link {
+    color: #ffffff;
+    text-decoration: underline 1px #ffffff dotted;
+    transition: .2s;
+
+}
+
+.xkom-link:hover {
+    color: #ffb8b8;
+    text-decoration: underline 1px #ffb8b8 dotted;
+}
+
+.biurko {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    color: #000000;
+}
+
+.biurko .xkom-link {
+    color: #000000;
+    text-decoration: underline 1px #000000 dotted;
+    transition: .2s;
+
+}
+
+.biurko .xkom-link:hover {
+    color: #ffb8b8;
+    text-decoration: underline 1px #ffb8b8 dotted;
+}
+
+.fotografia {
+    color: #fff;
+    padding: 1rem 2rem;
+    background-color: #000;
+}
